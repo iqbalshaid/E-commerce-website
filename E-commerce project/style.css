@@ -1,0 +1,1581 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+body{
+    scroll-behavior: smooth;
+    
+    width:100%;
+    height:100%;
+}
+nav{
+    
+    
+    width:100%;
+    height:60px;
+    position: fixed;
+    
+    z-index:999;
+    background-color: rgb(201, 223, 223);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 5px 15px gray;
+}
+.navbar1 h1{
+    margin: 30px 20px;
+    font-size: 20px;
+    font-weight: 600;
+    text-shadow: 0 5px 15px gray;
+}
+.navbar ul{
+    display: flex;
+    margin:30px 20px;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+    position: relative;
+}
+.navbar ul li{
+    padding: 10px 25px;
+    
+    font-size: 20px;
+    font-weight: 600;
+    font-style: italic;
+}
+.navbar ul li a{
+    text-decoration: none;
+    color:cadetblue;
+    text-shadow: 0 20px 20px rgb(128, 128, 136);
+
+}
+ .menu{
+    display: none;
+}
+.navbar ul li a.active{
+    color:red;
+
+}
+.navbar ul li a.active::after{
+    content:'';
+    position: absolute;
+    top:35px;
+    left:20px;
+    width: 30px;
+    height:5px;
+    line-height:5px;
+    background-color: brown;
+}
+.navbar ul li a::after:hover{
+    content:'';
+    position: absolute;
+    top:35px;
+    left: 20px;
+    width: 30px;
+    height:5px;
+    line-height:5px;
+    background-color: brown;
+    cursor: pointer;
+}
+.section{
+    
+    
+    background-color: rgb(146, 158, 154);
+    width:100%;
+    height:800px;
+    
+    display: flex;
+    justify-content: space-between;
+    align-items:center;
+    
+    
+    
+}
+
+.section .container{
+ margin-left: 80px;
+ 
+ display: block;   
+}
+.section .container h3{
+    font-size: 30px;
+    font-weight: 600;
+    color:black;
+}
+.section .container h1{
+    font-size: 45px;
+    font-weight: 600;
+    color:red;
+    margin-top:5px;
+}
+.section .container p{
+    font-size: 20px;
+    font-weight: 600;
+    color:skyblue;
+    margin-top:5px;
+}
+.section .container span{
+    font-size: 15px;
+    font-weight: 600;
+    color: gainsboro;
+    margin-top: 5px;
+}
+.section .container button{
+    padding:10px 10px;
+    background-color: brown;
+    color: white;
+    margin-top: 5px;
+    margin-left: 10px;
+}
+
+.section-1{
+    width:100%;
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.cards{
+    margin:20px 10px;
+    
+    flex-basis: 10%;
+    box-shadow:10px 5px 20px gray;
+    display: block;
+    
+}
+.section-1 .cards img{
+
+    width:40%;
+    margin: 5px 25%;
+    height:70px;
+    line-height: 40px;
+}
+.section-1 .cards button{
+    padding:5px 5px;
+    font-size: 8px;
+    color: white;
+    background-color: brown;
+    margin:10px 25%;
+    border-radius: 5px;
+}
+#box1{
+background-color: bisque;
+}
+#box2{
+    background-color: rgb(140, 138, 141);
+}
+#box3{
+    background-color: rgb(208, 198, 198);
+}
+#box4{
+    background-color: rgb(226, 233, 233);
+}
+#box5{
+    background-color: rgb(165, 173, 173);
+}
+#box6{
+    background-color: rgb(172, 171, 166);
+}
+.header{
+    text-align: center;
+}
+.header h1{
+    margin-top: 10px;
+    font-size: 2rem;
+    color: brown;
+}
+.header p{
+    margin-top: 5px;
+    font-size: 10px;
+    color: grey;
+}
+.section-2{
+    width:100%;
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.section-2 .cards{
+    margin:20px 10px;
+    
+    flex-basis: 20%;
+    box-shadow:10px 5px 20px gray;
+    display: block;
+    
+}
+ .section-2 .cards .img img{
+    margin:5px 20px;
+    width: 80%;
+    height:150px;
+    border-radius: 8px;
+    
+    text-align: center;
+}
+.section-2 .cards .img{
+    margin:10px 10px;
+    padding:auto;
+    background-color: rgb(234, 229, 229);
+    border-radius: 5px;
+}
+.section-2 .cards .text p{
+    margin:5px 10px ;
+    font-size: 15px;
+    color: rgb(207, 183, 183);
+}
+.section-2 .cards .text h4{
+    margin:5px 8px ;
+    font-size: 20px;
+    color: red;
+}
+.section-2 .cards .text span{
+margin:5px 8px ;
+font-size: 20px;
+color: goldenrod;
+}
+.section-2 .last{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.section-2 .last h1{
+    margin:5px 8px ;
+    font-size: 20px;
+    color:aqua;
+}
+.section-2 .last i{
+    margin:5px 8px ;
+    font-size: 20px;
+    color:aqua;
+}
+.section-3{
+    width: 100%;
+    height: 16rem;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    margin:20px 0;
+    background:url("chasma.jpg");
+    
+}
+.section-3 p{
+    text-align: center;
+    font-size: 40px;
+    padding-top:40px;
+    color: brown;
+}
+.section-3 h1{
+    text-align: center;
+    padding-top: 10px;
+    font-size: 30px;
+    color: black;
+}
+
+.section-3 h6 {
+    text-align: center;
+    padding-top: 10px;
+    font-size: 25px;
+    color: black;
+}
+
+.section-3 h4 a{
+
+    text-align: center;
+    
+    background-color: rgb(127, 127, 177);
+    color:white;
+    text-decoration: none;
+    padding:5px 10px;
+    font-size: 20px;
+    margin-top: 20px;
+}
+.section-4{
+    width:100vw;
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.section-4 .cards{
+    margin:20px 10px;
+    
+    flex-basis: 20%;
+    box-shadow:10px 5px 20px gray;
+    display: block;
+    
+}
+
+ .section-4 .cards .img img{
+    margin:5px 20px;
+    width: 80%;
+    height:150px;
+    border-radius: 8px;
+    
+    text-align: center;
+}
+.section-4 .cards .img{
+    margin:10px 10px;
+    padding:auto;
+    background-color: rgb(234, 229, 229);
+    border-radius: 5px;
+}
+.section-4 .cards .text p{
+    margin:5px 10px ;
+    font-size: 15px;
+    color: rgb(207, 183, 183);
+}
+.section-4 .cards .text h4{
+    margin:5px 8px ;
+    font-size: 20px;
+    color: red;
+}
+.section-4 .cards .text span{
+margin:5px 8px ;
+font-size: 20px;
+color: goldenrod;
+}
+.section-4 .last{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.section-4 .last h1{
+    margin:5px 8px ;
+    font-size: 20px;
+    color:aqua;
+}
+.section-4 .last i{
+    margin:5px 8px ;
+    font-size: 20px;
+    color:aqua;
+}
+
+.section-5{
+    display: flex;
+    align-items: center;
+    
+    margin-top: 80px;
+    justify-content: center;
+    flex-wrap: wrap;
+    
+    
+    
+}
+.section-5 .cards0{
+    
+    background: url("features4.jpg") no-repeat;
+    width:680px;
+    height: 20rem;
+    margin:0  10px;
+    
+    
+
+    
+}
+.section-5 .cards1{
+    
+    background: url("features1.jpg") no-repeat;
+    width:680px;
+    height: 20rem;
+    
+    margin: 0 20px;
+    
+}
+.section-5 .cards0 p{
+    padding-top: 90px;
+    padding-left: 10px;
+    color: brown;
+    font-size: 35px;
+}
+.section-5 .cards0 h1{
+    padding-top: 10px;
+    padding-left: 10px;
+    color:red;
+    font-size: 45px;
+}
+.section-5 .cards0 span {
+    padding-top: 10px;
+    padding-left: 10px;
+    color: black;
+    font-size: 20px;
+}
+.section-5 .cards0 button{
+    margin-top: 15px;
+    margin-left: 40px;
+    font-size: 20px;
+    padding:4px 10px;
+    border:4px solid white;
+    border-radius: 6px;
+}
+.section-5 .cards1 p{
+    padding-top: 90px;
+    padding-left: 10px;
+    color: brown;
+    font-size: 35px;
+}
+.section-5 .cards1 h1{
+    padding-top: 10px;
+    padding-left: 10px;
+    color:red;
+    font-size: 45px;
+}
+.section-5 .cards1 span {
+    padding-top: 10px;
+    padding-left: 10px;
+    color: black;
+    font-size: 20px;
+}
+.section-5 .cards1 button{
+    margin-top: 15px;
+    text-align: center;
+    margin-left: 40px;
+    font-size: 20px;
+    padding:4px 10px;
+    border:4px solid white;
+    border-radius: 6px;
+}
+
+.section-6{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 60px;
+    
+    
+}
+.section-6 .banner{
+    width:70%;
+    background: url("features2.jpg") no-repeat;
+    width: 100%;
+    height: 30rem;
+    margin: 0 20px;
+}
+.section-6 .banner1{
+    width:70%;
+    background: url("features2.jpg") no-repeat;
+    height: 30rem;
+    margin: 0 20px;
+}
+.section-6 .banner2{
+    width:70%;
+    background: url("features3.jpg");
+    height: 30rem;
+    margin: 0 20px;
+}
+.section-6 .banner h1{
+    padding-top: 15rem;
+    margin-left: 40px;
+    font-size: 30px;
+    font-weight: 600;
+    color: aqua;
+}
+.section-6 .banner h3{
+    padding-top: 10px;
+    margin-left: 40px;
+    font-size: 20px;
+    font-weight: 600;
+    color: rgb(141, 106, 106);
+}
+.section-6 .banner1 h1{
+    padding-top: 15rem;
+    margin-left: 40px;
+    font-size: 20px;
+    font-weight: 600;
+    color: aqua;
+}
+@media only screen and (max-width:680px) {
+    .section-4 .cards .img img {
+        margin: 5px;
+    }
+    
+}
+.section-6 .banner1 h3{
+    padding-top: 10px;
+    margin-left: 40px;
+    font-size: 20px;
+    font-weight: 600;
+    color: rgb(141, 106, 106);
+}
+.section-6 .banner2 h1{
+    padding-top: 15rem;
+    margin-left: 40px;
+    font-size: 30px;
+    font-weight: 600;
+    color: aqua;
+}
+.section-6 .banner2 h3{
+    padding-top: 10px;
+    margin-left: 40px;
+    font-size: 20px;
+    font-weight: 600;
+    color: rgb(141, 106, 106);
+}
+
+.section-7{
+    margin-top: 40px;
+    width:100%;
+    height:8rem;
+    background-color: rgb(170, 185, 180);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.section-7 .input{
+    text-align: center;
+    padding:20px 80px;
+}
+.section-7 .input h1{
+    font-size: 40px;
+    font-weight: 800;
+    color: white;
+}
+.section-7 .input p{
+    font-size: 20px;
+    font-weight: 600;
+    color: black;
+    margin-top: 10px;
+}
+.section-7 .input span{
+    font-size: 20px;
+    font-weight: 600;
+    color:gold;
+    margin-top: 10px;
+}
+.section-7 .input input{
+    font-size: 20px;
+    font-weight: 600;
+    padding:10px 40px;
+    background-color: white;
+    border-radius: 8px;
+    margin-top: 10px;
+    border: 2px solid rgb(129, 200, 129);
+}
+.section-7 .input button{
+    font-size: 20px;
+    font-weight: 600;
+    padding:10px 10px;
+    background-color:rgb(124, 237, 124);
+    border-radius: 8px;
+    margin-top: 10px;
+    margin-left: -8px;
+    color: white;
+    border: 2px solid rgb(129, 200, 129);
+}
+
+.footer{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 40px;
+}
+.footer .contain div h1{
+    font-size: 25px;
+    padding: 10px 0;
+}
+.footer .contain ul{
+    list-style: none;
+
+}
+.footer .contain ul li{
+    padding: 5px;
+    color: rgb(88, 81, 81);
+}
+.footer .contain h2{
+    padding:10px 0;
+    font-size: 15px;
+    font-weight: 600;
+    color: black;
+}
+.footer .contain p{
+    font-size: 15px;
+    font-weight: 700;
+    color: black;
+    padding: 5px 0;
+}
+.footer .contain span{
+    font-size: 15px;
+    font-weight: 700;
+    color: rgb(90, 84, 84);
+    padding: 5px 0;
+}
+.footer .contain p i{
+    font-size: 15px;
+    font-weight: 700;
+    
+    padding: 5px 10px;
+}
+.footer .contain .button{
+    margin-top: 10px;
+}
+.footer .contain .button button{
+    padding:10px 20px;
+}
+.footer .contain .button button i{
+    font-size: 20px;
+}
+.footer .contain p{
+    padding: 10px 0;
+    
+    font-size: 15px;
+    font-weight: 600;
+}
+.footer h1{
+    text-align: center;
+    font-size: 30px;
+    font-weight: 700;
+    color: rgb(71, 64, 64);
+}
+.footer1 h1{
+    text-align: center;
+    font-size: 20px;
+    color: rgb(98, 98, 189);
+    margin-bottom: 30px;
+}
+
+@media only screen and (max-width:380px)
+{
+    .navbar1 h1 {
+        text-align: center;
+    }
+    
+    .menu{
+        display: block;
+        margin-right: 20px;
+        
+        
+        
+    }
+    /* .navbar{
+        width: 100%;
+        height: fit-content;
+        background-color: aliceblue;
+        
+    }
+    .navbar ul.show{
+        display: block;
+        margin-top: 20px;
+        left: 0px;
+        text-align: center;
+        margin-bottom: 10px;
+        
+        list-style: none;
+        position: relative; 
+    }
+    .navbar ul.show li{
+        padding: 10px 25px;
+        
+        font-size: 20px;
+        font-weight: 600;
+        font-style: italic;
+    }
+    .navbar ul.show li a{
+        text-decoration: none;
+        color:cadetblue;
+    
+     }
+     */
+    .container h3 {
+        font-size: 10px;
+        
+    }
+    .container h1 {
+        font-size: 18px;
+    }
+    .container p {
+        font-size: 15px;
+    }
+    .container span {
+        font-size: 7px;
+        
+    }
+    .section-2 .cards .img img {
+        width:50%;
+    }
+    
+    .section-2 .cards .text h4 {
+        
+        font-size: 15px;
+        
+}
+.section-7 .input p {
+    font-size: 10px;
+}
+.section-7 .input button {
+    font-size: 10px;
+}
+.section-2 .cards {
+    
+    flex-basis: 40%;
+
+}
+.section-4 .cards {
+    
+    flex-basis: 40%;
+
+}
+.section-4 .cards .img img {
+    width:50%;
+}
+
+.section-4 .cards .text h4 {
+    
+    font-size: 15px;
+    
+}
+.section-2 .cards {
+    margin: 20px 10px;
+    flex-basis: 40%;
+    box-shadow: 10px 5px 20px gray;
+    display: block;
+}
+.section-4 .cards {
+    
+    flex-basis: 40%;
+
+}
+.section-4 .cards .img img {
+    width:50%;
+}
+
+.section-4 .cards .text h4 {
+    
+    font-size: 15px;
+    
+}
+.footer {
+    display: flex;
+    
+    flex-direction: column;
+}
+.footer .contain h2 {
+    
+    font-size: 40px;
+    
+}
+.footer .contain div h1 {
+    font-size: 50px;
+    
+}
+.footer .contain p {
+    font-size: 30px;
+    padding: 5px;
+}
+.footer .contain span {
+    font-size: 30px;
+    padding: 5px;
+}
+.section-7 .input h1 {
+    font-size: 10px;
+}
+.section-7 .input {
+    padding: 5px;
+}
+.section-7 .input input {
+    font-size: 0px;
+    padding: 10px 15px;
+
+}
+
+}
+@media only screen and (max-width:490px){
+    /* .section-6 .banner {
+        
+        
+        width:100%;
+        margin:20px 0px;
+    }
+    .section-6 .banner1 {
+        
+        
+        width:100%; 
+    margin:20px 0px;}
+   
+
+.section-6 .banner2 {
+        
+        
+    width:100%;
+    margin:20px 0px;
+} */
+.section-1 {
+    justify-content: center;
+}
+.section-2 .cards {
+
+    flex-basis: 30%;
+}
+.section-2 .cards .img img {
+    margin:5px;
+}
+.section-4 .cards {
+
+    flex-basis: 30%;
+}}
+
+
+@media only screen and (max-width:780px){
+    .section-1 .cards{
+        flex-basis:20%;
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+    .section-2 .cards .text h4 {
+        
+        font-size: 15px;
+        
+    }
+    .menu{
+        display: block;
+        margin-right: 20px;
+       background: red;
+       width: 40px;
+       height: 40px; 
+       border-radius: 5px;
+         cursor: pointer;
+    }
+     .menu .menu1{
+        width: 20px;
+        height: 6px;
+        background-color: white;
+        margin-top: 5px;
+        margin-left: 10px;
+        
+    }
+    .navbar{
+        background: white;
+        width: 100vw;
+        height: 0px;
+         position: absolute; 
+        top:50px;
+        left:0px;
+        right:0px;
+        overflow: hidden;
+        
+        
+      
+    }
+    .navbar ul{
+        display: block;
+       width:fit-content;
+       margin: 80px auto 0 auto;
+       text-align: center; 
+        opacity: 0;
+        
+    }
+    
+    .navbar.show{
+        height: 450px;
+    }
+    .navbar.show ul{
+        opacity: 1;
+    }
+    .navbar ul li{
+        padding: 10px 25px;
+        
+        font-size: 20px;
+        font-weight: 600;
+        font-style: italic;
+        overflow: hidden;
+    }
+    .navbar ul li a{
+        text-decoration: none;
+        color:red;
+    
+     }
+     .navbar ul li a:hover{
+        color: green;
+     }
+    
+     .section-7 .input h1 {
+        font-size: 20px;
+       }
+   
+    .section-1 .cards img {
+        width: 150px;
+        
+    }
+    .section-1 .cards img {
+        
+        margin: 5px 20px;
+    
+    }
+    
+    .section-4 .cards .text h4 {
+        
+        font-size: 15px;
+
+    }
+    
+.section-2 .cards .text span{
+    
+    font-size: 8px;
+    
+    }
+    .section-5 .cards0 {
+        
+       margin:20px 0px;
+    }
+    .section-6 .banner {
+        
+        
+        width:70%;
+        margin:20px 0px;
+    }
+    .section-6 .banner1 {
+        
+        
+        width:70%; 
+    margin:20px 0px;}
+    .section-6 {
+        display: flex;
+        flex-direction: column;
+    }
+    .section-6 .banner2 {
+        margin:20px 0px;
+        width:70%; }
+    .section-7 .input{
+        
+        padding:10px 30px;
+    }
+    .section-7 .input h1{
+        font-size: 20px;
+    }
+    .section-7 .input p{
+        font-size: 10px;
+    }
+    .section-7 .input span{
+        font-size: 10px;
+    }
+    
+    .section-7 .input input {
+        font-size: 15px;
+        padding: 13px 20px;
+    }
+    .footer .contain span {
+        font-size: 10px;
+        
+    }
+    .footer .contain p i {
+        font-size: 10px;
+        
+        padding: 5px 4px;
+    }
+    .footer .contain p{
+        font-size: 10px;
+        padding: 5px;
+        
+    }
+    
+    
+
+}
+.pagination{
+    text-align: center;
+    margin-top: 20px;
+}
+.pagination a{
+    padding: 5px 5px;
+    background-color:rgb(100, 193, 100) ;
+    text-decoration: none;
+    margin-left: 10px;
+    font-size: 20px;
+    font-weight: 700;
+    border-radius: 5px;
+    color: white;
+}
+.pagination a i{
+    
+    font-size: 25px;
+    
+}
+.section-product{
+    display: flex;
+    justify-content: space-around;
+    
+    margin-left: 20px;
+    margin-top: 2rem;
+}
+.section-product .single-img{
+    width:40%;
+    margin-right:50px;}
+.section-product .img-small{
+        
+        display: flex;
+        justify-content: space-between;
+        
+        flex-wrap: wrap;
+    }
+.section-product .img-small .mg-col{
+    
+        
+        flex-basis:24%;
+        box-shadow:10px 5px 20px gray;
+        cursor: pointer;
+        
+        
+    }
+.section-blog{
+    margin-top: 30px;
+}
+.section-blog .blog-1{
+    display: flex;
+    justify-content:space-evenly;
+    align-items: center;
+    
+}
+.section-blog .blog-1 div img{
+    height:20rem;
+    width:550px;
+    border-radius: 4px;
+    margin-top: 30px;
+}
+.section-blog .blog-1 .text h1{
+    font-size: 40px;
+    color: brown;
+    font-weight: 600;
+    margin-top: 20px;
+
+    
+}     
+.section-blog .blog-1 .text p{
+    font-size: 20px;
+    color: rgb(112, 103, 103);
+    font-weight: 600;
+    margin-top: 20px;
+
+    
+}     
+.section-blog .blog-1 .text h3{
+    font-size: 30px;
+    color: rgb(101, 202, 101);
+    font-weight: 600;
+    margin-top: 20px;
+
+    
+}  
+@media only screen and (max-width:780px){
+    .section-blog .blog-1 {
+        display: flex;
+        
+        flex-direction: column;
+    }
+    .about .about-1 p {
+        font-size: 7px;
+        
+    }
+    .about .about-1 span {
+        font-size: 8px;
+        
+    }
+}   
+@media only screen and (max-width:380px){
+    .section-blog .blog-1 .text p {
+        font-size: 16px;
+        
+    }
+    .section-blog .blog-1 .text h3 {
+        font-size: 25px;
+        
+    }
+    .about {
+        display: flex;
+        flex-direction: column;
+    }
+    .about img {
+        width: 100%;
+    }
+    .about .about-1 h1 {
+        font-size: 30px;
+    
+    }
+    .about .about-1 p {
+        font-size: 5px;
+        
+    }.about .about-1 span {
+        font-size: 6.5px;
+        
+    }
+    .about-app h1 {
+        font-size: 20px;
+        
+    }
+    .about-app {
+        margin-top: 0px;
+        text-align: start;
+    }
+
+}
+.about{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+.about img{
+    width:50%;
+    margin-left: 30px;
+}
+.about .about-1 h1{
+    font-size: 50px;
+    color:black;
+    font-weight: 700;
+    margin-top:20px ;
+    margin-left: 30px;
+}
+
+.about .about-1 p{
+    font-size: 10px;
+    color:black;
+    font-weight: 700;
+    margin-top:10px ;
+    margin-left: 30px;
+}
+.about .about-1 span{
+    font-size: 10px;
+    color:grey;
+    font-weight: 700;
+    margin-top:10px ;
+    margin-left: 30px;
+}
+.about-app{
+    margin-top: 40px;
+    text-align: center;
+}
+.about-app h1{
+    font-size: 50px;
+    color: black;
+}
+.about-app h1 a{
+    text-decoration: none;
+}
+.about-app .video{
+    width:70%;
+    height: 100%;
+    margin: 30px auto 0 auto;
+}
+.about-app .video video{
+    width:100%;
+    height: 100%;
+    border-radius: 20px;
+}
+.contact{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.contact .text h3{
+    font-size: 20px;
+    font-weight: 600;
+    color: gray;
+    margin-left: -40px;
+}
+.contact .text h1{
+    font-size: 30px;
+    font-weight: 600;
+    color: black;
+    margin-top: 10px;
+    margin-left: -40px;
+}
+.contact .text h4{
+    font-size: 20px;
+    font-weight: 600;
+    color: black;
+    margin-top: 10px;
+    margin-left: -40px;
+}
+.contact .text p i{
+    margin-top: 10px;
+    color: gray;
+    margin-left: -40px;
+    font-size: 15px;
+}
+.contact .text i{
+    margin-right: 5px;
+}
+.contact .map{
+    margin-left: 40px;
+}
+.contact-1{
+    margin-top: 30px;
+
+}
+.contact-1 .input{
+    text-align: center;
+}
+.contact-1 .input h3{
+    font-size: 25px;
+    font-weight:600 ;
+    color: gray;
+}
+.contact-1 .input h1{
+    font-size: 50px;
+    font-weight:600 ;
+    color: black;
+    margin-top: 10px;
+}
+.contact-1 .input input{
+    font-size: 15px;
+    font-weight:600 ;
+    color: gray;
+    padding: 10px 30px;
+    width: 50%;
+    margin-top: 10px;
+}
+.contact-1 .input textarea{
+    font-size: 25px;
+    font-weight:600 ;
+    margin-top: 10px;
+    color: gray;
+    width:100%;
+    height: 200px;
+}
+.contact-1 .input button{
+    font-size: 20px;
+    font-weight:600 ;
+    color: white;
+    padding: 10px 20px;
+    background-color: rgb(102, 208, 102);
+    margin-top: 10px;
+    border: 2px solid rgb(78, 193, 78);
+    margin-top: 10px;
+    border-radius: 5px;
+}
+@media only screen and (max-width:780px){
+    .contact {
+        display: flex;
+        
+        flex-direction: column;
+    
+    }
+    .contact .map {
+        margin-left: -40px;
+        margin-top: 10px;
+    }
+    .contact-1 .input h1 {
+        font-size: 40px;
+        
+    }
+    .contact-1 .input textarea {
+        
+        margin-top: 20px;
+        
+        width: 60%;
+        
+    }
+    .section-3 h1 {
+        
+        font-size: 20px;
+        
+    }
+    
+}
+.section-last table{
+    width:100%;
+    border-collapse: collapse;
+    table-layout: fixed;
+    white-space: nowrap;
+}
+.section-last table tr td:nth-child(1){
+    width:100px;
+    text-align: center;
+
+}
+.section-last table tr td:nth-child(2){
+    width:150px;
+    text-align: center;
+
+}
+.section-last table tr td:nth-child(3){
+    width:250px;
+    text-align: center;
+
+}
+.section-last table tr td:nth-child(4)
+
+
+{
+    width:150px;
+    text-align: center;
+
+}
+.section-last table tr td:nth-child(5)
+{
+    width:150px;
+    text-align: center;
+
+}
+
+.section-last table tr td:nth-child(6){
+    width:150px;
+    text-align: center;
+
+}
+.section-last table td:nth-child(5) input{
+    width:70px;
+    padding:10px 5px 10px 15px;
+}
+.section-last table thead{
+    border:1px solid wheat;
+    border-left:none;
+    border-right:none;
+
+}
+.section-last table thead td{
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 13px;
+    padding:18px 0;
+}
+.section-last table tbody tr td{
+    padding-top: 15px;
+}
+.section-last table tbody td{
+    font-size: 13px;
+}
+.section-last1{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 30px;
+}
+.section-last1 .shop{
+    width:40%;
+}
+.section-last1 .shop h1{
+    font-size: 35px;
+    margin-top: 20px;
+    color: black;
+    font-weight: 700;
+}
+.section-last1 .shop input{
+    margin-top: 20px;
+    padding: 10px 35px;
+    border: 1px solid brown;
+    font-size: 15px;
+}
+.section-last1 .shop span button{
+    padding:10px 15px;
+    background-color: rgb(76, 168, 76);
+    font-size: 15px;
+    border:5px solid green;
+    border-radius: 4px;
+    color:white;
+}
+.section-last1 .shop-1{
+    margin-bottom: 30px;
+    border:1px solid wheat;
+    padding: 30px;
+
+    width: 60%;
+}
+.section-last1 .shop-1 h2{
+    font-size: 25px;
+    
+}
+.section-last1 .shop-1 table{
+    
+    width: 100%;
+    margin-bottom: 20px;
+}
+.section-last1 .shop-1 table td{
+    width:50%;
+    border:1px solid wheat;
+    padding: 10px;
+    font-size: 13px;
+}
+.section-last1 .shop-1 button{
+    padding:10px 15px;
+    background-color: rgb(76, 168, 76);
+    font-size: 15px;
+    border:5px solid green;
+    border-radius: 4px;
+    color:white;
+}
+@media only screen and (max-width:380px){
+    .section-1{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+    .section-5 .cards0 h1 {
+        font-size: 30px;
+    }
+    .section-last{
+        overflow-x: auto;
+    }
+    .footer1 h1 {
+        
+        font-size: 15px;
+    
+    }
+    .section-last1 {
+        display: flex;
+        flex-direction: column;
+        
+    }
+    .section-last1 .shop {
+        width: 100%;
+    }
+    .section-last1 .shop-1 {
+        
+        margin-top: 20px;
+    }
+    .section-last1 .shop input {
+        
+        padding: 10px 20px;
+        
+
+    }
+    .section-last1 .shop-1 {
+        
+        width: 100%;
+    }
+    
+}
+@media only screen and (max-width:780px){
+    .section-last1 .shop span button {
+        
+        margin: 10px 0px;
+    }
+}
+
+.section-product .single-img{
+    width:40%;
+    margin-right: 50px;
+    margin-top: 40px;
+    
+  
+
+}
+ .img{
+    background-color: gray;
+    
+    border: 2px solid gray;
+    border-radius: 4px;
+}
+.section-product .single-img .img-small{
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.section-product .single-img .img-small .img-col{
+    flex-basis: 20%;
+    border:1px solid grey;
+    border-radius: 3px;
+    background-color: gray;
+    
+}
+.mens h4{
+    font-size: 15px;
+    color: black;
+    margin-top: 10px;
+}
+.mens h1{
+    font-size: 30px;
+    color: black;
+    margin-top: 20px;
+}
+.mens h3{
+    font-size: 20px;
+    color: rgb(176, 167, 167);
+    margin-top: 15px;
+}
+.mens select{
+    padding:10px 5px;
+    margin-top: 10px;
+    font-size:20px;
+    border: 1px solid rgb(183, 174, 174);
+}
+.mens input{
+padding:5px 0px;
+margin-top: 10px;
+width:70px;
+border: 1px solid rgb(183, 174, 174);
+color:rgb(190, 186, 186);
+font-size: 20px;
+text-align: center;
+}
+.mens button{
+    padding: 10px 0px;
+    background-color: rgb(104, 167, 104);
+    border-radius: 4px;
+    margin-top: 15px;
+    color:white;
+    border:1px solid rgb(101, 170, 101);
+}
+.mens h5{
+    font-size: 25px;
+    font-weight: 700;
+    color:black;
+    margin-top: 10px;
+}
+.mens p{
+    font-size: 15px;
+    font-weight: 600;
+    color: gray;
+    margin-top: 10px;
+}
+
+@media only screen and (max-width:380px){
+    .section-product .single-img {
+        width: 100%;
+        
+    }
+    .section-product {
+        display: flex;
+        
+        flex-direction: column;
+        
+    }
+    .section-7 {
+        
+        display: flex;
+        flex-direction: column;
+        
+    }
+    .section-7 .input button {
+        
+        padding: 17px 5px;
+        
+        margin-left: -3px;
+        
+    }
+}
+@media only screen and (max-width:990px){
+    .section-7 .input h1 {
+        font-size: 20px;
+    }
+    .section-5 .cards0 {
+        
+        margin: 20px 0px;
+    }
+    .section-7 .input p{
+        font-size: 10px;
+    }
+    .section-7 .input span{
+        font-size: 10px;
+    }
+    .contact .text h3 {
+        margin-left: 0px;}
+        .contact .text h1 {
+            margin-left: 0px;}
+            .contact .text h4 {
+                margin-left: 0px;}
+                .contact .text p {
+                    margin-left: 50px;}
+}
+@media only screen and (max-width:1300px){
+    .section-5 .cards0{
+        margin: 20px 0px;
+    }
+    .section-5 .cards1{
+        margin: 20px 0px;
+    }
+}
